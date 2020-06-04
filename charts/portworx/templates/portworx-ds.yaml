@@ -90,7 +90,7 @@ spec:
             [
               {{- if eq $drives "none" }}
                   {{- if .AKSInstall -}}
-                   "-s", "type=Premium_LRS,size=150",
+                   "-s", "type=Premium_LRS,size=256",
                   {{- else if eq $usedrivesAndPartitions true }}
                       "-A",
                   {{- else }}
